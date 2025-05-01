@@ -1,9 +1,18 @@
 """
-ASGI config for ecommerce_project project.
+ASGI (Asynchronous Server Gateway Interface) configuration for the e-commerce project.
 
-It exposes the ASGI callable as a module-level variable named ``application``.
+This module configures the ASGI application for the Django project, enabling asynchronous
+web server capabilities. It sets up the application to handle WebSocket connections and
+other asynchronous protocols.
 
-For more information on this file, see
+The module exposes the ASGI callable as a module-level variable named ``application``,
+which is used by ASGI servers to serve the Django application.
+
+Configuration:
+    - Sets the default Django settings module to 'ecommerce_project.settings'
+    - Creates an ASGI application using Django's get_asgi_application()
+
+For more information on ASGI configuration, see:
 https://docs.djangoproject.com/en/5.2/howto/deployment/asgi/
 """
 
